@@ -5,12 +5,12 @@ const GlassCardsCircle = () => {
   const [activeSection, setActiveSection] = useState(null);
   const [showDetails, setShowDetails] = useState(false);
 
-  const sections = {
+const sections = {
     why: {
       title: "WHY",
       color: "bg-gradient-to-br from-blue-600/80 via-blue-500/50 to-cyan-400/30",
       borderColor: "border-cyan-400/30",
-      size: "w-72 h-72",
+      size: "w-[20rem] h-[20rem]",
       position: "z-30",
       mainStatement: "Empowering and transforming lives through technology and creativity",
       details: [
@@ -36,7 +36,7 @@ const GlassCardsCircle = () => {
       title: "HOW",
       color: "bg-gradient-to-br from-indigo-600/80 via-purple-500/50 to-blue-400/30",
       borderColor: "border-blue-400/30",
-      size: "w-[36rem] h-[36rem]",
+      size: "w-[30rem] h-[30rem]",
       position: "z-20",
       mainStatement: "Bridging vision and reality through expertise, experience, and collaboration",
       details: [
@@ -62,7 +62,7 @@ const GlassCardsCircle = () => {
       title: "WHAT",
       color: "bg-gradient-to-br from-violet-600/80 via-indigo-500/50 to-purple-400/30",
       borderColor: "border-purple-400/30",
-      size: "w-[52rem] h-[52rem]",
+      size: "w-[40rem] h-[40rem]",
       position: "z-10",
       mainStatement: "Delivering transformative AI solutions and inspiring positive change",
       details: [
@@ -85,6 +85,7 @@ const GlassCardsCircle = () => {
       ]
     }
   };
+
 
   const DetailCard = ({ detail, index }) => (
     <motion.div
